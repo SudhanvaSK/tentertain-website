@@ -64,11 +64,10 @@ const WorkWithUs = () => {
         {
           name: result.data.name,
           email: result.data.email,
-          // subject: result.data.subject,
           title: result.data.subject,
           message: result.data.message,
         },
-        // EMAILJS_PUBLIC_KEY,
+        EMAILJS_PUBLIC_KEY,
       );
       console.log("Response ", response);
       setForm({ name: "", email: "", subject: "", message: "" });
