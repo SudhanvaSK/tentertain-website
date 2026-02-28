@@ -53,7 +53,7 @@ const CurtainReveal = ({ onComplete }: { onComplete: () => void }) => {
           >
             <p className="font-display text-primary text-sm tracking-[0.4em] uppercase mb-2">Welcome to</p>
             <h1 className="font-display text-4xl md:text-6xl font-bold text-foreground">
-              <span className="text-primary">Tent</span>ertain
+              tentertain
             </h1>
             <div className="w-16 h-px bg-primary/50 mx-auto mt-4" />
           </motion.div>

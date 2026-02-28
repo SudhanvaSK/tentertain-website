@@ -14,8 +14,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ["Playfair Display", "serif"],
-        body: ["DM Sans", "sans-serif"],
+        display: ["Kalam", "cursive"],
+        body: ["Kalam", "cursive"],
+        kalam: ["Kalam", "cursive"],
       },
       colors: {
         border: "hsl(var(--border))",

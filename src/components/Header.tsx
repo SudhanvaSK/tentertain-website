@@ -45,38 +45,7 @@ const Header = ({ hoveredSide = "none" }: HeaderProps) => {
             <Sparkles className="w-4 h-4 text-primary" />
           </div>
           <span className="font-display text-lg font-bold tracking-wide select-none">
-            <motion.span
-              className="inline-block"
-              animate={{
-                color: hoveredSide === "left" ? "hsl(160, 60%, 55%)" : "hsl(var(--foreground))",
-              }}
-              transition={{ duration: 0.4 }}
-            >
-              T
-            </motion.span>
-            <motion.span
-              className="inline-block"
-              animate={{
-                color: hoveredSide === "left"
-                  ? "hsl(160, 60%, 55%)"
-                  : hoveredSide === "right"
-                    ? "hsl(0, 60%, 55%)"
-                    : "hsl(var(--foreground))",
-              }}
-              transition={{ duration: 0.4 }}
-            >
-              ent
-            </motion.span>
-            <motion.span
-              className="inline-block"
-              animate={{
-                color: hoveredSide === "right" ? "hsl(0, 60%, 55%)" : "hsl(var(--foreground))",
-              }}
-              transition={{ duration: 0.4 }}
-            >
-              ertain
-            </motion.span>
-            <span className="text-primary">.com</span>
+            tentertain
           </span>
         </button>
 

@@ -36,11 +36,11 @@ const WorkWithUs = () => {
     const body = encodeURIComponent(
       `Name: ${result.data.name}\nEmail: ${result.data.email}\n\n${result.data.message}`
     );
-    window.location.href = `mailto:hello@tentertain.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:sudhanvask29@gmail.com?subject=${subject}&body=${body}`;
 
     toast({
       title: "Opening your email client",
-      description: "Your message is ready to send. If your mail client didn't open, write to us at hello@tentertain.com",
+      description: "Your message is ready to send. If your mail client didn't open, write to us at sudhanvask29@gmail.com",
     });
   };
 
@@ -57,12 +57,12 @@ const WorkWithUs = () => {
       <div className="fixed top-0 left-0 right-0 z-50 bg-background/70 backdrop-blur-xl border-b border-border/50">
         <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between h-16">
           <button onClick={() => navigate("/")} className="flex items-center gap-2 text-foreground/60 hover:text-foreground transition-colors font-body text-sm">
-            <ArrowLeft className="w-4 h-4" /> Back to Tentertain
+            <ArrowLeft className="w-4 h-4" /> Back to tentertain
           </button>
           <div className="flex items-center gap-2">
             <Sparkles className="w-4 h-4 text-primary" />
             <span className="font-display text-sm font-bold text-foreground">
-              <span className="text-primary">Tent</span>ertain
+              tentertain
             </span>
           </div>
         </div>
@@ -177,7 +177,7 @@ const WorkWithUs = () => {
                 </form>
 
                 <p className="text-muted-foreground text-xs font-body mt-4 text-center">
-                  Or write directly to <a href="mailto:hello@tentertain.com" className="text-primary hover:underline">hello@tentertain.com</a>
+                  Or write directly to <a href="mailto:sudhanvask29@gmail.com" className="text-primary hover:underline">sudhanvask29@gmail.com</a>
                 </p>
               </div>
             </motion.div>
