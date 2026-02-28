@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 10% 6%;
+    --foreground: 40 20% 95%;
+
+    --card: 30 10% 10%;
+    --card-foreground: 40 20% 95%;
+
+    --popover: 30 10% 10%;
+    --popover-foreground: 40 20% 95%;
+
+    --primary: 40 80% 55%;
+    --primary-foreground: 30 10% 6%;
+
+    --secondary: 180 45% 30%;
+    --secondary-foreground: 180 20% 95%;
+
+    --muted: 30 10% 15%;
+    --muted-foreground: 30 10% 55%;
+
+    --accent: 0 65% 42%;
+    --accent-foreground: 40 20% 95%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 10% 18%;
+    --input: 30 10% 18%;
+    --ring: 40 80% 55%;
+
+    --radius: 0.75rem;
+
+    /* Butterfly wing colors */
+    --greenroom: 150 50% 18%;
+    --greenroom-light: 155 45% 28%;
+    --greenroom-accent: 160 60% 55%;
+    --boxoffice: 0 60% 22%;
+    --boxoffice-light: 355 55% 35%;
+    --boxoffice-accent: 40 80% 65%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 30 10% 6%;
+    --foreground: 40 20% 95%;
+    --card: 30 10% 10%;
+    --card-foreground: 40 20% 95%;
+    --popover: 30 10% 10%;
+    --popover-foreground: 40 20% 95%;
+    --primary: 40 80% 55%;
+    --primary-foreground: 30 10% 6%;
+    --secondary: 180 45% 30%;
+    --secondary-foreground: 180 20% 95%;
+    --muted: 30 10% 15%;
+    --muted-foreground: 30 10% 55%;
+    --accent: 0 65% 42%;
+    --accent-foreground: 40 20% 95%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 30 10% 18%;
+    --input: 30 10% 18%;
+    --ring: 40 80% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .text-gold {
+    color: hsl(var(--primary));
+  }
+
+  .text-gradient-green {
+    background: linear-gradient(135deg, hsl(150 50% 45%), hsl(160 60% 65%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-crimson {
+    background: linear-gradient(135deg, hsl(0 60% 50%), hsl(40 80% 65%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .greenroom-gradient {
+    background: linear-gradient(135deg, hsl(150 50% 10%) 0%, hsl(155 45% 18%) 40%, hsl(145 40% 14%) 100%);
+  }
+
+  .boxoffice-gradient {
+    background: linear-gradient(135deg, hsl(0 60% 14%) 0%, hsl(355 55% 22%) 40%, hsl(5 50% 18%) 100%);
+  }
+
+  .glow-green {
+    box-shadow: 0 0 40px hsl(150 50% 40% / 0.25);
+  }
+
+  .glow-crimson {
+    box-shadow: 0 0 40px hsl(0 60% 40% / 0.25);
+  }
+
+  /* Theater curtains */
+  .curtain-left {
+    background: linear-gradient(
+      90deg,
+      hsl(0 70% 18%) 0%,
+      hsl(0 65% 25%) 30%,
+      hsl(0 60% 20%) 60%,
+      hsl(0 70% 15%) 100%
+    );
+    box-shadow: inset -20px 0 40px hsl(0 0% 0% / 0.4);
+  }
+
+  .curtain-right {
+    background: linear-gradient(
+      270deg,
+      hsl(0 70% 18%) 0%,
+      hsl(0 65% 25%) 30%,
+      hsl(0 60% 20%) 60%,
+      hsl(0 70% 15%) 100%
+    );
+    box-shadow: inset 20px 0 40px hsl(0 0% 0% / 0.4);
+  }
+}
