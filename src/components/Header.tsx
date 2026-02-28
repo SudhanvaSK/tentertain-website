@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate, useLocation } from "react-router-dom";
-import { Sparkles, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 interface HeaderProps {
   hoveredSide?: "none" | "left" | "right";
@@ -42,8 +42,8 @@ const Header = ({ hoveredSide = "none" }: HeaderProps) => {
         {/* Logo */}
         <button onClick={() => navigate("/")} className="flex items-center gap-2.5 group">
           <div className="w-8 h-8 rounded-lg border border-primary/40 flex items-center justify-center bg-primary/10 group-hover:bg-primary/20 transition-colors">
-            <Sparkles className="w-4 h-4 text-primary" />
-          </div>
+              <img src="/favicon/favicon.svg" alt="tentertain logo" className="w-4 h-4" />
+            </div>
           <span className="font-display text-lg font-bold tracking-wide select-none">
             tentertain
           </span>

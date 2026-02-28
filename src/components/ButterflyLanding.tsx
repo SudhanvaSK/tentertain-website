@@ -40,7 +40,7 @@ const ButterflyLanding = ({ hoveredSide, onHoverChange }: ButterflyLandingProps)
             className="flex flex-col items-center"
           >
             <div className="w-16 h-16 md:w-20 md:h-20 rounded-full border-2 border-primary/60 flex items-center justify-center bg-background/30 backdrop-blur-md glow-green">
-              <Sparkles className="w-8 h-8 md:w-10 md:h-10 text-primary" />
+              <img src="/favicon/favicon.svg" alt="tentertain logo" className="w-8 h-8 md:w-10 md:h-10" />
             </div>
             <p className="text-muted-foreground text-xs md:text-sm font-body mt-1 tracking-widest uppercase">
               The Show Starts Here
@@ -335,7 +335,7 @@ const ButterflyLanding = ({ hoveredSide, onHoverChange }: ButterflyLandingProps)
       <footer className="border-t border-border py-12 px-4 md:px-8">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-2.5">
-            <Sparkles className="w-5 h-5 text-primary" />
+            <img src="/favicon/favicon.svg" alt="tentertain logo" className="w-5 h-5" />
             <span className="font-display text-lg font-bold text-foreground">
               <span className="text-primary">Tent</span>ertain<span className="text-primary">.com</span>
             </span>
