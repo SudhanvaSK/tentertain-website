@@ -79,7 +79,7 @@ const WorkWithUs = () => {
       toast({
         title: "Failed to send",
         description:
-          "Something went wrong. Please write to us directly at sudhanvask29@gmail.com",
+          "Something went wrong. Please again later.",
         variant: "destructive",
       });
     } finally {
